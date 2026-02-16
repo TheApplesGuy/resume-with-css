@@ -25,7 +25,8 @@ a {
     border: 1px solid #e5e7eb;
     margin: 28px auto;
     padding: 0.75in;
-    width: 8.5in;
+    width: 100%;
+    max-width: 8.5in;
     min-height: 11in;
 }
 
@@ -152,4 +153,32 @@ main>div {
     background-color: #f0f0f0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transform: scale(1.02);
+}
+
+/* responsive design for mobile devices, put down here as this is what i thought about last lol */
+@media (max-width: 820px) {
+    .page {
+        padding: 20px;
+        margin: 10px auto;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .header-contact-info {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .section h2 {
+        text-align: center;
+    }
 }
