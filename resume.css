@@ -1,0 +1,155 @@
+/* called "resume.css" for simplicity sakes cause every page here uses this one */
+/* decoration stuff to make it look like a doc resume template*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #f3f4f6;
+    color: #111;
+    font-family: Georgia, serif;
+    line-height: 1.45;
+    margin: 0;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+/* decoration stuff to make it look like a doc resume template*/
+
+/* what makes this look like a page*/
+.page {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    margin: 28px auto;
+    padding: 0.75in;
+    width: 8.5in;
+    min-height: 11in;
+}
+
+/* header stuff */
+.header {
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 18px;
+}
+
+/* contact info */
+.header-contact-info {
+    font-size: 13px;
+    text-align: right;
+}
+
+/* contact info links */
+.header-contact-info a {
+    text-decoration: underline;
+}
+
+/* main name style */
+.header h1 {
+    font-size: 44px;
+    font-weight: 700;
+    margin: 0;
+}
+
+main {
+    padding-top: 18px;
+}
+
+/* consistent spacing for sections and entries */
+.section {
+    margin-bottom: 18px;
+}
+
+/* consistent spacing for sections and entries */
+.entry {
+    margin-bottom: 18px;
+}
+
+/* shares the to section headers and dates */
+.section h2 {
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.entry div {
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+/* Section Headings */
+.section h2 {
+    color: #1d4ed8;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    margin-bottom: 12px;
+}
+
+/* entry titles */
+.entry h3 {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* extra entry stuff */
+.entry div {
+    color: #6b7280;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    margin-top: 2px;
+}
+
+/* body texts and links */
+.section p {
+    color: #222;
+    font-size: 13.5px;
+}
+
+.section ul {
+    color: #222;
+    font-size: 13.5px;
+}
+
+.section p {
+    margin-top: 8px;
+}
+
+.section ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.section ul li {
+    margin-bottom: 8px;
+}
+
+/* helper for centering content */
+main>div {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* interactive project links */
+.projects-section a {
+    display: block;
+    color: inherit;
+}
+
+/* lowkey stole this idea from the other assignment we did a couple weeks earlier, liked the idea for the projects */
+.projects-section .entry {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* hover effect: slight scale up and shadow, that way user knows that the section is clickable */
+.projects-section a:hover .entry {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02);
+}
